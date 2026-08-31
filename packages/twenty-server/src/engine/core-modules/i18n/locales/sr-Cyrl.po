@@ -121,6 +121,12 @@ msgstr "Масовно слање имејлова публици, са стат
 msgid "A cache lock error occurred."
 msgstr "Дошло је до грешке закључавања кеша."
 
+#. js-lingui-id: BdG91f
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgctxt "objectMetadata.description"
+msgid "A calendar event target"
+msgstr ""
+
 #. js-lingui-id: PInBOB
 #: src/engine/metadata-modules/flat-page-layout-widget/validators/utils/validate-chart-filter.util.ts
 msgid "A chart filter has no field"
@@ -198,6 +204,12 @@ msgstr "Обавештење пре истека вашег Twenty пробно�
 #: src/engine/core-modules/application/application.exception.ts
 msgid "A higher version of this application is already installed. Downgrading is not allowed."
 msgstr "Виша верзија ове апликације је већ инсталирана. Враћање на старију верзију није дозвољено."
+
+#. js-lingui-id: gnMqGV
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgctxt "objectMetadata.description"
+msgid "A message thread target"
+msgstr ""
 
 #. js-lingui-id: Nh/ZZe
 #: src/engine/metadata-modules/object-metadata/object-metadata.exception.ts
@@ -774,6 +786,7 @@ msgid "An unexpected error occurred while handling the server route."
 msgstr "Дошло је до неочекиване грешке приликом обраде серверске руте."
 
 #. js-lingui-id: W5A0Ly
+#: src/engine/core-modules/cache-storage/exceptions/cache-storage.exception.ts
 #: src/engine/core-modules/emailing-domain/exceptions/email-group-access.exception.ts
 #: src/engine/metadata-modules/row-level-permission-predicate/exceptions/row-level-permission-predicate-group.exception.ts
 #: src/engine/metadata-modules/row-level-permission-predicate/exceptions/row-level-permission-predicate.exception.ts
@@ -970,12 +983,6 @@ msgstr "Архивирано"
 #. js-lingui-id: ITCVsf
 #: src/engine/workspace-manager/twenty-standard-application/constants/standard-command-menu-item.constant.ts
 msgctxt "commandMenuItem.label"
-msgid "Ask AI"
-msgstr "Питајте AI"
-
-#. js-lingui-id: qOe49F
-#: src/engine/workspace-manager/twenty-standard-application/constants/standard-command-menu-item.constant.ts
-msgctxt "commandMenuItem.shortLabel"
 msgid "Ask AI"
 msgstr "Питајте AI"
 
@@ -1176,6 +1183,12 @@ msgstr "Тип аутоматизованог окидача"
 msgctxt "fieldMetadata.label"
 msgid "Automated Triggers"
 msgstr "Аутоматизовани окидачи"
+
+#. js-lingui-id: wDnUny
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Automatically assigned"
+msgstr ""
 
 #. js-lingui-id: bhFnpx
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-person-standard-flat-field-metadata.util.ts
@@ -1461,6 +1474,12 @@ msgstr "Поље завршетка календара мора да припа�
 msgid "Calendar end field not found"
 msgstr "Поље завршетка календара није пронађено"
 
+#. js-lingui-id: D3hM1L
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-target-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Calendar event"
+msgstr ""
+
 #. js-lingui-id: 8brwDQ
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgctxt "objectMetadata.labelSingular"
@@ -1533,6 +1552,38 @@ msgctxt "fieldMetadata.description"
 msgid "Calendar event record position"
 msgstr "Позиција записа догађаја календара"
 
+#. js-lingui-id: o5eNjt
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgctxt "objectMetadata.labelSingular"
+msgid "Calendar Event Target"
+msgstr ""
+
+#. js-lingui-id: XSZPL4
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-target-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Calendar event target event"
+msgstr ""
+
+#. js-lingui-id: lz9OaG
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Calendar event targets"
+msgstr ""
+
+#. js-lingui-id: Ps7oA0
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgctxt "objectMetadata.labelPlural"
+msgid "Calendar Event Targets"
+msgstr ""
+
+#. js-lingui-id: r20w41
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-opportunity-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-person-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Calendar events"
+msgstr ""
+
 #. js-lingui-id: KfFFWa
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgctxt "objectMetadata.description"
@@ -1544,6 +1595,24 @@ msgstr "Догађаји у календару"
 msgctxt "objectMetadata.labelPlural"
 msgid "Calendar events"
 msgstr "Догађаји у календару"
+
+#. js-lingui-id: QfPEE0
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Calendar events tied to the company"
+msgstr ""
+
+#. js-lingui-id: E4Wz06
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-person-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Calendar events tied to the contact"
+msgstr ""
+
+#. js-lingui-id: pyeAzD
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-opportunity-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Calendar events tied to the opportunity"
+msgstr ""
 
 #. js-lingui-id: Sn4xhy
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/utils/validate-flat-view-calendar-fields.util.ts
@@ -2072,6 +2141,7 @@ msgid "Companies"
 msgstr "Компаније"
 
 #. js-lingui-id: aNUhqB
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-opportunity-standard-flat-field-metadata.util.ts
@@ -2514,6 +2584,7 @@ msgid "Create View"
 msgstr "Креирајте приказ"
 
 #. js-lingui-id: V+Pnck
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -2551,6 +2622,7 @@ msgid "Created field metadata, parent object metadata not found"
 msgstr "Креиран метаподатак поља, метаподатак родитељског објекта није пронађен"
 
 #. js-lingui-id: ezEYQZ
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -2585,6 +2657,7 @@ msgid "Creation date"
 msgstr "Датум креирања"
 
 #. js-lingui-id: MZxGED
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -2753,6 +2826,7 @@ msgid "Date format"
 msgstr "Формат датума"
 
 #. js-lingui-id: bCL+CN
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -3028,6 +3102,7 @@ msgid "Deleted {objectLabelPlural}"
 msgstr "Обрисано {objectLabelPlural}"
 
 #. js-lingui-id: Sf3H2K
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -3371,6 +3446,9 @@ msgid "Emails"
 msgstr "Е-маилови"
 
 #. js-lingui-id: nWIjgD
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-opportunity-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-person-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-person-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Emails"
@@ -3964,6 +4042,7 @@ msgid "Field used for full-text search"
 msgstr "Поље коришћено за текстуалну претрагу"
 
 #. js-lingui-id: pcBMew
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -4469,12 +4548,6 @@ msgstr "Идите на Подешавања"
 msgid "Google API authentication is disabled."
 msgstr "Google API аутентификација је онемогућена."
 
-#. js-lingui-id: pXkgL2
-#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
-#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
-msgid "Grid position is required"
-msgstr "Позиција у мрежи је обавезна"
-
 #. js-lingui-id: L8fEEm
 #: src/engine/core-modules/tool-provider/utils/get-crud-tool-label.util.ts
 msgid "Group"
@@ -4565,6 +4638,7 @@ msgid "iCal UID"
 msgstr "iCal идентификатор"
 
 #. js-lingui-id: tO7kqE
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -4598,6 +4672,7 @@ msgid "Id"
 msgstr "Ид"
 
 #. js-lingui-id: Jq9kVe
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -5484,6 +5559,17 @@ msgstr "Неважећи унос вебхука."
 msgid "Invalid widget configuration."
 msgstr "Неважећа конфигурација виџета."
 
+#. js-lingui-id: NSpdub
+#: src/engine/metadata-modules/page-layout-widget/utils/validate-page-layout-widget-grid-position.util.ts
+msgid "Invalid widget position"
+msgstr ""
+
+#. js-lingui-id: 8dS5h/
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
+msgid "Invalid widget position layout mode"
+msgstr ""
+
 #. js-lingui-id: bznmUY
 #: src/modules/workflow/common/exceptions/workflow-version-edge.exception.ts
 msgid "Invalid workflow edge request."
@@ -5796,6 +5882,7 @@ msgid "Last published Version Id"
 msgstr "Идентификатор последње објављене верзије"
 
 #. js-lingui-id: OBGY97
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -5829,6 +5916,7 @@ msgid "Last time the record was changed"
 msgstr "Последње време измене записа"
 
 #. js-lingui-id: hzBM8U
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -5924,6 +6012,11 @@ msgstr "Идентификатор повезаног записа"
 msgctxt "fieldMetadata.label"
 msgid "Linkedin"
 msgstr "ЛинкедИн"
+
+#. js-lingui-id: 4yWmVP
+#: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-links-flat-field-metadata.util.ts
+msgid "Links field type must be either a url or a domain"
+msgstr ""
 
 #. js-lingui-id: ++iNv7
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
@@ -6046,6 +6139,12 @@ msgstr "Логичка функција није пронађена."
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-logic-function-validator.service.ts
 msgid "Logic function with same universal identifier already exists"
 msgstr "Логичка функција са истим универзалним идентификатором већ постоји"
+
+#. js-lingui-id: dgxlIJ
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Manually assigned"
+msgstr ""
 
 #. js-lingui-id: Mwvtvf
 #: src/engine/workspace-manager/workspace-migration/interceptors/utils/__tests__/build-metadata-validation-error-payload.util.spec.ts
@@ -6361,6 +6460,12 @@ msgctxt "objectMetadata.description"
 msgid "Message Synced with a Message Channel"
 msgstr "Порука синхронизована са каналом порука"
 
+#. js-lingui-id: JZIhQu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-thread-target-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Message thread"
+msgstr ""
+
 #. js-lingui-id: MLNdvD
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgctxt "objectMetadata.description"
@@ -6393,11 +6498,53 @@ msgctxt "fieldMetadata.description"
 msgid "Message Thread record position"
 msgstr "Позиција записа теме порука"
 
+#. js-lingui-id: frnvp/
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgctxt "objectMetadata.labelSingular"
+msgid "Message Thread Target"
+msgstr ""
+
+#. js-lingui-id: 8VG+FR
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-thread-target-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Message thread target thread"
+msgstr ""
+
+#. js-lingui-id: VHCKNR
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-thread-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Message thread targets"
+msgstr ""
+
+#. js-lingui-id: q03DOY
+#: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
+msgctxt "objectMetadata.labelPlural"
+msgid "Message Thread Targets"
+msgstr ""
+
 #. js-lingui-id: icQX0H
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
 msgctxt "objectMetadata.labelPlural"
 msgid "Message Threads"
 msgstr "Теме порука"
+
+#. js-lingui-id: mKjuch
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-company-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Message threads tied to the company"
+msgstr ""
+
+#. js-lingui-id: WGjTJT
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-person-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Message threads tied to the contact"
+msgstr ""
+
+#. js-lingui-id: Z+Jdwp
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-opportunity-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Message threads tied to the opportunity"
+msgstr ""
 
 #. js-lingui-id: S6Ztef
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-timeline-activity-standard-flat-field-metadata.util.ts
@@ -7274,6 +7421,7 @@ msgid "Opportunities owned by the workspace member"
 msgstr "Прилике у власништву члана радног простора"
 
 #. js-lingui-id: JpA/cO
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-target-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-task-target-standard-flat-field-metadata.util.ts
@@ -7765,6 +7913,7 @@ msgid "Person"
 msgstr "Лице"
 
 #. js-lingui-id: F8wyAu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-participant-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-list-member-standard-flat-field-metadata.util.ts
@@ -7826,6 +7975,11 @@ msgstr "Изаберите датум и време завршетка нако�
 msgid "Please confirm your updated email"
 msgstr ""
 
+#. js-lingui-id: Zm9s4F
+#: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
+msgid "Please enter a domain name, like twenty.com"
+msgstr ""
+
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
 msgid "Please provide a password for this connection."
@@ -7876,6 +8030,7 @@ msgid "Point of Contact"
 msgstr "Контакт особа"
 
 #. js-lingui-id: rLOFsu
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -8073,6 +8228,7 @@ msgstr "Ограничење брзине је прекорачено."
 
 #. js-lingui-id: xD2MTL
 #: src/engine/core-modules/throttler/throttler.exception.ts
+#: src/engine/core-modules/usage-limit/exceptions/usage-limit.exception.ts
 msgid "Rate limit reached. Please try again later."
 msgstr "Достигнуто је ограничење брзине. Покушајте поново касније."
 
@@ -8230,6 +8386,8 @@ msgid "Relations"
 msgstr "Релације"
 
 #. js-lingui-id: 9ur990
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-standard-flat-field-metadata.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-thread-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-note-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-task-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
@@ -8695,6 +8853,12 @@ msgctxt "fieldMetadata.label"
 msgid "Scheduled"
 msgstr "Заказано"
 
+#. js-lingui-id: V1y7Hg
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Scope"
+msgstr ""
+
 #. js-lingui-id: SiXwZL
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-opportunity-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
@@ -8764,6 +8928,7 @@ msgid "Search vector"
 msgstr "Вектор претраживања"
 
 #. js-lingui-id: Zuw7oP
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -9426,6 +9591,20 @@ msgstr "Није пронађена картица за дуплирање ви�
 msgid "Target object metadata not found for {connectFieldName}"
 msgstr "Метаподаци циљног објекта нису пронађени за {connectFieldName}"
 
+#. js-lingui-id: iVwZ6H
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Target record"
+msgstr ""
+
+#. js-lingui-id: nTzzR8
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Target record position"
+msgstr ""
+
 #. js-lingui-id: 1ssKrE
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-morph-or-relation-flat-field-metadata.util.ts
 msgid "Target relation field does not belong to the expected object"
@@ -9700,6 +9879,11 @@ msgstr "Запис кључ-вредност апликације није би�
 msgid "The application's production dependencies are too large to install. Move packages that are not imported by its logic functions (UI libraries, dev tooling) out of \"dependencies\"."
 msgstr "Продукционе зависности апликације су превелике за инсталацију. Преместите пакете које њене логичке функције не увозе (UI библиотеке, развојни алати) из \"dependencies\"."
 
+#. js-lingui-id: IIdxjy
+#: src/modules/connected-account-sync-webhooks/calendar-event-webhook-sync/calendar-event-webhook-sync.exception.ts
+msgid "The calendar is already syncing."
+msgstr ""
+
 #. js-lingui-id: KHtcGn
 #: src/modules/calendar/calendar-event-creation-manager/exceptions/calendar-event-creation.exception.ts
 msgid "The calendar provider rejected the event creation request."
@@ -9747,6 +9931,7 @@ msgid "The connection-provider manifest is missing required fields."
 msgstr "У манифесту провајдера конекције недостају обавезна поља."
 
 #. js-lingui-id: WhUgpA
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -9860,6 +10045,11 @@ msgstr "Отпремање датотеке није завршено. Поку�
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-timeline-activity-type-validator.service.ts
 msgid "The front component used by this timeline activity type is not available"
 msgstr "Предња компонента коју користи овај тип активности временске линије није доступна."
+
+#. js-lingui-id: 840b8q
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-timeline-activity-type-validator.service.ts
+msgid "The happensAt field used by this timeline activity type is not available"
+msgstr ""
 
 #. js-lingui-id: EJUSll
 #: src/modules/workflow/common/workspace-services/workflow-version-validation.workspace-service.ts
@@ -10123,6 +10313,7 @@ msgid "The workflow version status"
 msgstr "Статус верзије тока рада"
 
 #. js-lingui-id: AiP86c
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -10318,6 +10509,11 @@ msgstr "Овај Enterprise кључ се већ користи на друго�
 msgid "This evaluation target could not be found."
 msgstr "Циљ оцењивања није пронађен."
 
+#. js-lingui-id: uNp8ZA
+#: src/engine/core-modules/enterprise/enterprise.exception.ts
+msgid "This feature is complimentary up to {MAX_SEATS_WITHOUT_ENTERPRISE_KEY} seats. Your instance is above that, so an enterprise key is required."
+msgstr ""
+
 #. js-lingui-id: hsi+jf
 #: src/engine/core-modules/workspace/workspace.exception.ts
 msgid "This feature is not enabled."
@@ -10388,6 +10584,11 @@ msgstr "Ова инстанца није пријавила идентифика
 #: src/engine/core-modules/billing/billing.exception.ts
 msgid "This kind of credit grant cannot be created by hand."
 msgstr "Оваква врста додељеног кредита не може се креирати ручно."
+
+#. js-lingui-id: AFqkCe
+#: src/engine/core-modules/usage-limit/exceptions/usage-limit.exception.ts
+msgid "This limit cannot be saved."
+msgstr ""
 
 #. js-lingui-id: 6Z/zIt
 #: src/engine/metadata-modules/permissions/permissions.exception.ts
@@ -10723,6 +10924,11 @@ msgstr "Тип активности временске линије је у су
 msgctxt "fieldMetadata.description"
 msgid "Timeline activity type describing this event"
 msgstr "Тип активности временске линије који описује овај догађај"
+
+#. js-lingui-id: yi1Kgg
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-timeline-activity-type-validator.service.ts
+msgid "Timeline activity type happensAt field must be a date field on the source object of a linked relation event"
+msgstr ""
 
 #. js-lingui-id: sqmSqj
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-timeline-activity-type-validator.service.ts
@@ -11064,6 +11270,7 @@ msgid "updated a related task"
 msgstr "ажурирао/ла повезани задатак"
 
 #. js-lingui-id: U8sfYC
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-attachment-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-channel-event-association-standard-flat-field-metadata.util.ts
@@ -11120,6 +11327,11 @@ msgstr "URL мора бити стринг за виџет \"{widgetTitle}\""
 #: src/engine/core-modules/billing/billing.exception.ts
 msgid "Usage could not be read. Please try again later."
 msgstr "Потрошња није могла да се прочита. Покушајте поново касније."
+
+#. js-lingui-id: tGvlMG
+#: src/engine/core-modules/usage-limit/exceptions/usage-limit.exception.ts
+msgid "Usage quota exhausted for this period."
+msgstr ""
 
 #. js-lingui-id: xwq0b4
 #: src/engine/workspace-manager/twenty-standard-application/constants/standard-command-menu-item.constant.ts
@@ -11718,6 +11930,7 @@ msgstr "је прекинуо/ла везу"
 
 #. js-lingui-id: xvV2NJ
 #: src/engine/api/graphql/workspace-query-runner/constants/postgres-error-messages.constants.ts
+#: src/engine/api/graphql/workspace-query-runner/constants/postgres-error-messages.constants.ts
 msgid "We are experiencing a temporary issue with our database. Please try again later."
 msgstr "Искусили смо привремени проблем са нашом базом података. Молимо вас покушајте поново касније."
 
@@ -11801,6 +12014,24 @@ msgctxt "fieldMetadata.description"
 msgid "Where records open for objects that follow the member's preference"
 msgstr "Где се записи отварају за објекте који прате преференцију члана"
 
+#. js-lingui-id: x9NQvE
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Whether a user explicitly assigned this target"
+msgstr ""
+
+#. js-lingui-id: YpNNWn
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/build-standard-target-flat-field-metadatas.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Whether current participant rules justify this target"
+msgstr ""
+
+#. js-lingui-id: shMrkl
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.description"
+msgid "Whether the handle is blocked for a single workspace member or for the whole workspace"
+msgstr ""
+
 #. js-lingui-id: zSq4aO
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.description"
@@ -11809,15 +12040,12 @@ msgstr "Да ли је ова порука непослати нацрт син�
 
 #. js-lingui-id: OHlJ1X
 #: src/engine/metadata-modules/page-layout-widget/utils/validate-page-layout-widget-grid-position.util.ts
-#: src/engine/metadata-modules/page-layout-widget/utils/validate-widget-grid-position.util.ts
 msgid "Widget extends beyond grid height"
 msgstr "Виџет прелази висину мреже"
 
 #. js-lingui-id: PFI4iS
 #: src/engine/metadata-modules/page-layout-widget/utils/validate-page-layout-widget-grid-position.util.ts
 #: src/engine/metadata-modules/page-layout-widget/utils/validate-page-layout-widget-grid-position.util.ts
-#: src/engine/metadata-modules/page-layout-widget/utils/validate-widget-grid-position.util.ts
-#: src/engine/metadata-modules/page-layout-widget/utils/validate-widget-grid-position.util.ts
 msgid "Widget extends beyond grid width"
 msgstr "Виџет прелази ширину мреже"
 
@@ -11858,7 +12086,6 @@ msgstr "Тип позиције виџета мора да одговара ре
 
 #. js-lingui-id: D5gHL1
 #: src/engine/metadata-modules/page-layout-widget/utils/validate-page-layout-widget-grid-position.util.ts
-#: src/engine/metadata-modules/page-layout-widget/utils/validate-widget-grid-position.util.ts
 msgid "Widget row exceeds grid height"
 msgstr "Ред виџета прелази висину мреже"
 
@@ -12171,6 +12398,12 @@ msgstr "workflowVersionId не сме бити постављен за кључ 
 msgid "workflowVersionId must not be set when engineComponentKey is FRONT_COMPONENT_RENDERER"
 msgstr "workflowVersionId не сме бити постављен када је engineComponentKey FRONT_COMPONENT_RENDERER"
 
+#. js-lingui-id: kRP73e
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Workspace"
+msgstr ""
+
 #. js-lingui-id: bK8AyJ
 #: src/engine/core-modules/billing-webhook/services/billing-webhook-subscription.service.ts
 #: src/engine/core-modules/billing-webhook/services/billing-webhook-subscription.service.ts
@@ -12219,6 +12452,12 @@ msgstr "Достигнут је лимит радних простора. Пот
 msgctxt "fieldMetadata.description"
 msgid "Workspace member"
 msgstr "Члан простора за рад"
+
+#. js-lingui-id: gfOHib
+#: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-blocklist-standard-flat-field-metadata.util.ts
+msgctxt "fieldMetadata.label"
+msgid "Workspace member"
+msgstr ""
 
 #. js-lingui-id: pwKAVz
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-calendar-event-participant-standard-flat-field-metadata.util.ts
@@ -12610,7 +12849,7 @@ msgstr "Морате бити аутентификовани да бисте у�
 #. js-lingui-id: z+7x/s
 #: src/engine/core-modules/auth/auth.exception.ts
 #: src/engine/core-modules/auth/utils/auth-graphql-api-exception-handler.util.ts
-#: src/engine/guards/workspace-auth.guard.ts
+#: src/engine/guards/utils/get-request-or-throw-when-unauthenticated.util.ts
 msgid "You must be authenticated to perform this action."
 msgstr "Морате бити аутентификовани да бисте извршили ову радњу."
 

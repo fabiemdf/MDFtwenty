@@ -1078,10 +1078,13 @@ msgstr "Actions users can perform on this object"
 
 #. js-lingui-id: FQBaXG
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
+#: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectFieldDisabledActionDropdown.tsx
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 #: src/modules/settings/security/components/SSO/SettingsSecuritySSORowDropdownMenu.tsx
+#: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
+#: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 #: src/pages/settings/ai/components/SettingsAiUsageTab.tsx
 #: src/pages/settings/ai/components/SettingsSkillInactiveMenuDropDown.tsx
 #: src/pages/settings/ai/SettingsSkillForm.tsx
@@ -1150,6 +1153,7 @@ msgid "Add \"{trimmedName}\" to options"
 msgstr "Add \"{trimmedName}\" to options"
 
 #. js-lingui-id: 9CHcSG
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateNoRecordFoundForFilter.tsx
 msgid "Add a {objectLabelSingular}"
 msgstr "Add a {objectLabelSingular}"
@@ -1176,6 +1180,16 @@ msgstr "Add a meeting link"
 msgid "Add a new company we're in touch with (e.g. name, website, industry). Details: "
 msgstr "Add a new company we're in touch with (e.g. name, website, industry). Details: "
 
+#. js-lingui-id: 5xxrhm
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Add a note"
+msgstr "Add a note"
+
+#. js-lingui-id: uza/B9
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Add a note to this record: "
+msgstr "Add a note to this record: "
+
 #. js-lingui-id: Ad+JsP
 #: src/modules/activities/calendar/hooks/useComposeCalendarEventRelatedRecordAction.ts
 msgid "Add a person with an email to this company first"
@@ -1187,9 +1201,15 @@ msgid "Add a record"
 msgstr "Add a record"
 
 #. js-lingui-id: eMc2xs
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
 #: src/modules/workflow/workflow-diagram/components/WorkflowDiagramCreateStepElement.tsx
 msgid "Add a step"
 msgstr "Add a step"
+
+#. js-lingui-id: BKYXUk
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Add a step to this workflow that "
+msgstr "Add a step to this workflow that "
 
 #. js-lingui-id: KKfos4
 #: src/modules/workflow/workflow-diagram/workflow-nodes/components/WorkflowDiagramEmptyTriggerEditable.tsx
@@ -1601,7 +1621,6 @@ msgstr "Add your first {objectLabel}"
 
 #. js-lingui-id: vLO+NG
 #: src/modules/settings/hooks/useGetAddedRelativeDateDescription.ts
-#: src/modules/ui/layout/show-page/components/ShowPageSummaryCard.tsx
 msgid "Added {beautifiedCreatedAt}"
 msgstr "Added {beautifiedCreatedAt}"
 
@@ -1786,6 +1805,7 @@ msgid "Aggregate Chart"
 msgstr "Aggregate Chart"
 
 #. js-lingui-id: jsQZMk
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
 #: src/modules/settings/admin-panel/hooks/useSettingsAdminTabs.ts
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectForm.tsx
@@ -3824,11 +3844,6 @@ msgstr "Channels"
 msgid "Chart"
 msgstr "Chart"
 
-#. js-lingui-id: AHZflp
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
-msgid "Chat"
-msgstr "Chat"
-
 #. js-lingui-id: rlwve5
 #: src/modules/ai/components/AiChatThreadItemMenu.tsx
 msgid "Chat actions"
@@ -3867,10 +3882,20 @@ msgstr "ChatGPT"
 msgid "Chats"
 msgstr "Chats"
 
+#. js-lingui-id: oa2dNe
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Check recent runs"
+msgstr "Check recent runs"
+
 #. js-lingui-id: JslvtK
 #: src/modules/activities/calendar/components/CalendarEventComposerFields.tsx
 msgid "Check the event dates"
 msgstr "Check the event dates"
+
+#. js-lingui-id: PaKTa7
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Check this workflow's recent runs and tell me whether any failed and why."
+msgstr "Check this workflow's recent runs and tell me whether any failed and why."
 
 #. js-lingui-id: h5C4B4
 #: src/modules/settings/emailing-domains/components/SettingsEmailingDomainVerifyButton.tsx
@@ -4228,10 +4253,10 @@ msgstr "Collapse details"
 msgid "Collapse folder"
 msgstr "Collapse folder"
 
-#. js-lingui-id: 4Ub5ma
-#: src/modules/ui/navigation/navigation-drawer/components/NavigationDrawerCollapseButton.tsx
-msgid "Collapse navigation panel"
-msgstr "Collapse navigation panel"
+#. js-lingui-id: mkMLq4
+#: src/modules/navigation/hooks/useNavigationDrawerTogglePresentation.ts
+msgid "Collapse sidebar"
+msgstr "Collapse sidebar"
 
 #. js-lingui-id: OQTRMK
 #: src/modules/ai/components/AiChatCollapseButton.tsx
@@ -5230,7 +5255,13 @@ msgstr "Create"
 msgid "Create a new contact and link them to a company. Details: "
 msgstr "Create a new contact and link them to a company. Details: "
 
+#. js-lingui-id: j85EUk
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a new record in this view. Details: "
+msgstr "Create a new record in this view. Details: "
+
 #. js-lingui-id: n1Nbbe
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
 #: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
 msgid "Create a record"
 msgstr "Create a record"
@@ -5239,6 +5270,22 @@ msgstr "Create a record"
 #: src/pages/settings/ai/components/SettingsAgentRoleTab.tsx
 msgid "Create a role to define permissions for this agent."
 msgstr "Create a role to define permissions for this agent."
+
+#. js-lingui-id: OW4ZDC
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a task"
+msgstr "Create a task"
+
+#. js-lingui-id: Jk5UrD
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a task for this company: "
+msgstr "Create a task for this company: "
+
+#. js-lingui-id: T9fLSG
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a task for this record: "
+msgstr "Create a task for this record: "
 
 #. js-lingui-id: Xn2Nlq
 #: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
@@ -5412,7 +5459,7 @@ msgid "Created"
 msgstr "Created"
 
 #. js-lingui-id: 4fBuqE
-#: src/modules/side-panel/components/SidePanelRecordInfo.tsx
+#: src/modules/object-record/record-show/components/RecordIdentifierBarCreatedAt.tsx
 #: src/modules/side-panel/pages/search/components/SidePanelSearchRecordPreviewCard.tsx
 msgid "Created {beautifiedCreatedAt}"
 msgstr "Created {beautifiedCreatedAt}"
@@ -5760,6 +5807,26 @@ msgstr "Custom provider"
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
 msgid "Custom Providers"
 msgstr "Custom Providers"
+
+#. js-lingui-id: 79QPp0
+#. placeholder {0}: access.seatThreshold
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "Custom providers are complimentary for organizations of up to {0} seats. Above that, an Organization plan is required."
+msgstr "Custom providers are complimentary for organizations of up to {0} seats. Above that, an Organization plan is required."
+
+#. js-lingui-id: dDp+uz
+#. placeholder {0}: access.seatThreshold
+#. placeholder {1}: access.seatCount
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "Custom providers are complimentary for organizations of up to {0} seats. This instance has {1} seats, so an Organization plan is required."
+msgstr "Custom providers are complimentary for organizations of up to {0} seats. This instance has {1} seats, so an Organization plan is required."
+
+#. js-lingui-id: FjmF6O
+#. placeholder {0}: access.seatThreshold
+#. placeholder {1}: access.seatCount
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "Custom providers are complimentary up to {0} seats. This instance has {1}. Upgrade to add more."
+msgstr "Custom providers are complimentary up to {0} seats. This instance has {1}. Upgrade to add more."
 
 #. js-lingui-id: BjGDEB
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
@@ -6671,6 +6738,21 @@ msgstr "Devices"
 msgid "Devices with an active session on your account"
 msgstr "Devices with an active session on your account"
 
+#. js-lingui-id: PFS3WB
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Dictation did not respond in this browser. Try Safari, or type instead."
+msgstr "Dictation did not respond in this browser. Try Safari, or type instead."
+
+#. js-lingui-id: qXiOAF
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Dictation failed. Try again."
+msgstr "Dictation failed. Try again."
+
+#. js-lingui-id: MDy8Vw
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Dictation is not supported in this browser."
+msgstr "Dictation is not supported in this browser."
+
 #. js-lingui-id: MRB7nI
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 msgid "Direction"
@@ -6820,6 +6902,7 @@ msgid "Doesn't contain"
 msgstr "Doesn't contain"
 
 #. js-lingui-id: EoKe5U
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
 #: src/modules/settings/workspace/components/SettingsWorkspaceEmailGroupSection.tsx
 #: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 msgid "Domain"
@@ -6829,6 +6912,11 @@ msgstr "Domain"
 #: src/modules/settings/domains/hooks/useSettingsCustomDomain.ts
 msgid "Domain already taken"
 msgstr "Domain already taken"
+
+#. js-lingui-id: eNcdvk
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
+msgid "Domain links are stored as a bare domain name, so twenty.com and https://www.twenty.com are the same value"
+msgstr "Domain links are stored as a bare domain name, so twenty.com and https://www.twenty.com are the same value"
 
 #. js-lingui-id: XoBD/+
 #: src/modules/settings/domains/components/SettingsDomainRecords.tsx
@@ -6913,6 +7001,16 @@ msgstr "Download sample"
 #: src/modules/activities/emails/components/EmailThreadPreview.tsx
 msgid "Draft"
 msgstr "Draft"
+
+#. js-lingui-id: 1qZ7C3
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Draft an email"
+msgstr "Draft an email"
+
+#. js-lingui-id: /b72oP
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Draft an email to this company about "
+msgstr "Draft an email to this company about "
 
 #. js-lingui-id: DbAw4C
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowRunStepLogsEmailDetail.tsx
@@ -7190,6 +7288,12 @@ msgstr "Edit page"
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 msgid "Edit payment method, see your invoices and more"
 msgstr "Edit payment method, see your invoices and more"
+
+#. js-lingui-id: bQBJjz
+#. placeholder {0}: pinnedTab.title
+#: src/modules/page-layout/components/PageLayoutRecordIdentifierBar.tsx
+msgid "Edit pinned tab: {0}"
+msgstr "Edit pinned tab: {0}"
 
 #. js-lingui-id: QJQd1J
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
@@ -8258,16 +8362,16 @@ msgstr "Expand details"
 msgid "Expand folder"
 msgstr "Expand folder"
 
-#. js-lingui-id: 7OJt04
-#: src/modules/ui/navigation/navigation-drawer/components/NavigationDrawerCollapseButton.tsx
-msgid "Expand navigation panel"
-msgstr "Expand navigation panel"
-
 #. js-lingui-id: CM8OoE
 #: src/modules/side-panel/pages/record-page/hooks/useExpandRecordSidePanelPage.ts
 #: src/modules/side-panel/pages/rich-text-page/hooks/useExpandRichTextSidePanelPage.ts
 msgid "Expand record"
 msgstr "Expand record"
+
+#. js-lingui-id: tugdy6
+#: src/modules/navigation/hooks/useNavigationDrawerTogglePresentation.ts
+msgid "Expand sidebar"
+msgstr "Expand sidebar"
 
 #. js-lingui-id: Y7w75u
 #: src/modules/workflow/workflow-steps/workflow-actions/code-action/components/WorkflowCodeEditor.tsx
@@ -8339,6 +8443,16 @@ msgstr "Expires in"
 #: src/modules/settings/developers/utils/formatExpiration.ts
 msgid "Expires in {dateDiff}"
 msgstr "Expires in {dateDiff}"
+
+#. js-lingui-id: VJKLVq
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Explain this workflow"
+msgstr "Explain this workflow"
+
+#. js-lingui-id: p8KUPY
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Explain what this workflow does, step by step."
+msgstr "Explain what this workflow does, step by step."
 
 #. js-lingui-id: GS+Mus
 #: src/modules/object-record/record-index/export/hooks/useRecordIndexExportRecords.ts
@@ -9032,6 +9146,16 @@ msgstr "Filter chats"
 msgid "Filter group rule options"
 msgstr "Filter group rule options"
 
+#. js-lingui-id: FG3LyE
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Filter this view"
+msgstr "Filter this view"
+
+#. js-lingui-id: xitJ93
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Filter this view to only show "
+msgstr "Filter this view to only show "
+
 #. js-lingui-id: 0i36a3
 #: src/modules/page-layout/widgets/timeline/components/WidgetActionTimelineFilter.tsx
 msgid "Filter timeline"
@@ -9320,6 +9444,7 @@ msgstr "Full name"
 #. js-lingui-id: i9zh9T
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectOpenRecordInPicker.tsx
 #: src/modules/settings/experience/components/OpenRecordInPreferencePicker.tsx
+#: src/modules/ui/navigation/navigation-drawer/constants/OpenRecordInOptions.ts
 msgid "Full page"
 msgstr "Full page"
 
@@ -9487,6 +9612,7 @@ msgid "Go to Draft"
 msgstr "Go to Draft"
 
 #. js-lingui-id: mT57+Q
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateRemote.tsx
 #: src/modules/views/view-picker/components/ViewPickerCreateButton.tsx
 #: src/modules/views/view-picker/components/ViewPickerCreateButton.tsx
@@ -9856,7 +9982,7 @@ msgid "Hire a partner to help you implement and customize Twenty."
 msgstr "Hire a partner to help you implement and customize Twenty."
 
 #. js-lingui-id: i0qMbr
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
 #: src/modules/navigation/hooks/useMobileNavigationBarItems.ts
 msgid "Home"
 msgstr "Home"
@@ -10103,6 +10229,7 @@ msgid "If this email is registered, a password reset link has been sent"
 msgstr "If this email is registered, a password reset link has been sent"
 
 #. js-lingui-id: ZfP/Ap
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateRemote.tsx
 msgid "If this is unexpected, please verify your settings."
 msgstr "If this is unexpected, please verify your settings."
@@ -11522,6 +11649,11 @@ msgstr "link"
 msgid "Link"
 msgstr "Link"
 
+#. js-lingui-id: FJPUOB
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
+msgid "Link content"
+msgstr "Link content"
+
 #. js-lingui-id: pQjjYo
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownDefaultView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownDefaultView.tsx
@@ -11846,6 +11978,7 @@ msgstr "Make private"
 
 #. js-lingui-id: wckWOP
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
+#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsManageSection.tsx
 msgid "Manage"
@@ -12221,6 +12354,11 @@ msgstr "Metadata file generation failed"
 msgid "Method"
 msgstr "Method"
 
+#. js-lingui-id: P9IeiA
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Microphone access is blocked. Allow it in your browser settings to dictate."
+msgstr "Microphone access is blocked. Allow it in your browser settings to dictate."
+
 #. js-lingui-id: 6cH65H
 #: src/modules/settings/security/components/SettingsSecurityAuthBypassOptionsList.tsx
 #: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
@@ -12445,16 +12583,14 @@ msgstr "Move Down"
 #. js-lingui-id: iSLA/r
 #: src/modules/object-record/record-group/hooks/useRecordGroupActions.ts
 #: src/modules/object-record/record-table/record-table-header/components/RecordTableColumnHeadDropdownMenu.tsx
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
 msgid "Move left"
 msgstr "Move left"
 
 #. js-lingui-id: Ubl2by
 #: src/modules/object-record/record-group/hooks/useRecordGroupActions.ts
 #: src/modules/object-record/record-table/record-table-header/components/RecordTableColumnHeadDropdownMenu.tsx
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
 msgid "Move right"
 msgstr "Move right"
 
@@ -12649,10 +12785,10 @@ msgstr "navigation menu item"
 msgid "Navigation menu items"
 msgstr "Navigation menu items"
 
-#. js-lingui-id: s2HXiD
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
-msgid "Navigation tabs"
-msgstr "Navigation tabs"
+#. js-lingui-id: aTTshK
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
+msgid "Navigation modes"
+msgstr "Navigation modes"
 
 #. js-lingui-id: IbVc4A
 #: src/modules/page-layout/widgets/record-table/utils/getRecordTableWidgetLayoutPickerOptions.ts
@@ -12741,8 +12877,6 @@ msgstr "New calendar event"
 
 #. js-lingui-id: hIQkLb
 #: src/modules/ai/components/NavigationDrawerAiChatThreadItem.tsx
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
 msgid "New chat"
 msgstr "New chat"
 
@@ -12984,6 +13118,7 @@ msgid "No {label}"
 msgstr "No {label}"
 
 #. js-lingui-id: 9CpMvJ
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateNoRecordFoundForFilter.tsx
 msgid "No {objectLabelSingular} found"
 msgstr "No {objectLabelSingular} found"
@@ -13203,6 +13338,7 @@ msgid "No Data"
 msgstr "No Data"
 
 #. js-lingui-id: 7tCnBa
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateRemote.tsx
 msgid "No Data Available for Remote Table"
 msgstr "No Data Available for Remote Table"
@@ -13239,11 +13375,13 @@ msgid "No default configuration available for this widget"
 msgstr "No default configuration available for this widget"
 
 #. js-lingui-id: P4KXUa
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateSoftDelete.tsx
 msgid "No Deleted {objectLabelSingular} found"
 msgstr "No Deleted {objectLabelSingular} found"
 
 #. js-lingui-id: s7QKq9
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateSoftDelete.tsx
 msgid "No deleted records matching the filter criteria were found."
 msgstr "No deleted records matching the filter criteria were found."
@@ -13416,6 +13554,11 @@ msgstr "No messages found."
 msgid "No metrics data available"
 msgstr "No metrics data available"
 
+#. js-lingui-id: RUBcco
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "No microphone is available. Connect one and try again."
+msgstr "No microphone is available. Connect one and try again."
+
 #. js-lingui-id: UWZZdQ
 #: src/pages/settings/ai/components/SettingsAgentSettingsTab.tsx
 #: src/pages/settings/ai/forms/components/SettingsAiAgentForm.tsx
@@ -13504,12 +13647,14 @@ msgid "No record selected"
 msgstr "No record selected"
 
 #. js-lingui-id: EqGTpW
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-picker/components/RecordPickerNoRecordFoundMenuItem.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
 msgid "No records found"
 msgstr "No records found"
 
 #. js-lingui-id: FwUgy3
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateNoRecordFoundForFilter.tsx
 msgid "No records matching the filter criteria were found."
 msgstr "No records matching the filter criteria were found."
@@ -14322,6 +14467,11 @@ msgstr "Open Cursor's MCP installer with the Twenty remote server config."
 msgid "Open Gmail"
 msgstr "Open Gmail"
 
+#. js-lingui-id: C39K59
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
+msgid "Open in"
+msgstr "Open in"
+
 #. js-lingui-id: noLjKT
 #: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldOnClickActionForm.tsx
 msgid "Open in app"
@@ -14347,6 +14497,11 @@ msgstr "Open record"
 #: src/modules/settings/experience/components/OpenRecordInPreferencePicker.tsx
 msgid "Open records alongside the current page"
 msgstr "Open records alongside the current page"
+
+#. js-lingui-id: p9J4lB
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownOpenRecordInComponents.tsx
+msgid "Open records in"
+msgstr "Open records in"
 
 #. js-lingui-id: F7UdSk
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectOpenRecordInPicker.tsx
@@ -14447,6 +14602,11 @@ msgstr "Ordered List"
 #: src/pages/settings/enterprise/components/OrganizationAdornment.tsx
 msgid "Organization"
 msgstr "Organization"
+
+#. js-lingui-id: 0Ogq/s
+#: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
+msgid "Organization feature"
+msgstr "Organization feature"
 
 #. js-lingui-id: cyDPQQ
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
@@ -14949,7 +15109,7 @@ msgid "Pie Chart"
 msgstr "Pie Chart"
 
 #. js-lingui-id: 3pU8e+
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
 msgid "Pin tab"
 msgstr "Pin tab"
 
@@ -14965,6 +15125,11 @@ msgstr "Pink"
 msgid "Pinned"
 msgstr "Pinned"
 
+#. js-lingui-id: OFY07S
+#: src/modules/page-layout/components/PageLayoutRecordIdentifierBar.tsx
+msgid "Pinned tab, always shown on the left"
+msgstr "Pinned tab, always shown on the left"
+
 #. js-lingui-id: hx1ePY
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowFormFieldSettingsNumber.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowFormFieldSettingsText.tsx
@@ -14972,7 +15137,7 @@ msgid "Placeholder"
 msgstr "Placeholder"
 
 #. js-lingui-id: MFTZK8
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/components/TabSettingsPlacementSection.tsx
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsPlacementSection.tsx
 msgid "Placement"
 msgstr "Placement"
@@ -15922,6 +16087,7 @@ msgid "Remove block"
 msgstr "Remove block"
 
 #. js-lingui-id: 2HpFUd
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateSoftDelete.tsx
 msgid "Remove Deleted filter"
 msgstr "Remove Deleted filter"
@@ -16119,6 +16285,16 @@ msgstr "Require authentication"
 #: src/pages/settings/ai/components/SettingsToolParameterTable.tsx
 msgid "Required"
 msgstr "Required"
+
+#. js-lingui-id: Vae65A
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Research this company"
+msgstr "Research this company"
+
+#. js-lingui-id: ycHL5x
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Research this company and summarize what they do, how big they are and any recent news."
+msgstr "Research this company and summarize what they do, how big they are and any recent news."
 
 #. js-lingui-id: G42SNI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
@@ -16627,6 +16803,11 @@ msgstr "Scopes"
 msgid "Score"
 msgstr "Score"
 
+#. js-lingui-id: oOi11l
+#: src/modules/ai/components/AiChatScrollToBottomButton.tsx
+msgid "Scroll to bottom"
+msgstr "Scroll to bottom"
+
 #. js-lingui-id: hJjXGo
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 msgid "SDK"
@@ -17081,6 +17262,11 @@ msgstr "See records"
 msgid "See Records on All Objects"
 msgstr "See Records on All Objects"
 
+#. js-lingui-id: boSDrg
+#: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
+msgid "See what I can do"
+msgstr "See what I can do"
+
 #. js-lingui-id: eQ3co2
 #: src/pages/settings/data-model/SettingsObjects.tsx
 msgid "See your data structure as an interactive diagram"
@@ -17470,11 +17656,6 @@ msgstr "Set a default for this workspace"
 msgid "Set as default"
 msgstr "Set as default"
 
-#. js-lingui-id: 7f09hf
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-msgid "Set as pinned tab"
-msgstr "Set as pinned tab"
-
 #. js-lingui-id: ml98ku
 #: src/modules/object-record/record-field/ui/meta-types/input/components/MultiItemFieldMenuItem.tsx
 msgid "Set as Primary"
@@ -17543,9 +17724,8 @@ msgid "Setting up your <0>database</0>..."
 msgstr "Setting up your <0>database</0>..."
 
 #. js-lingui-id: Tz0i8g
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
 #: src/modules/navigation/components/NavigationDrawerOtherSection.tsx
-#: src/modules/navigation/components/SettingsNavigationDrawer.tsx
-#: src/modules/navigation/components/SettingsNavigationDrawer.tsx
 #: src/modules/object-record/record-merge/hooks/useMergeRecordsContainerTabs.ts
 #: src/modules/settings/accounts/components/SettingsAccountsSettingsSection.tsx
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
@@ -17555,8 +17735,6 @@ msgstr "Setting up your <0>database</0>..."
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 #: src/modules/settings/roles/role/components/SettingsRole.tsx
 #: src/modules/side-panel/pages/page-layout/components/dashboard/SidePanelDashboardRecordTableSettings.tsx
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
 #: src/pages/settings/ai/SettingsAgentForm.tsx
 #: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
@@ -17713,6 +17891,7 @@ msgstr "Show value in center"
 #. js-lingui-id: P7rcbf
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectOpenRecordInPicker.tsx
 #: src/modules/settings/experience/components/OpenRecordInPreferencePicker.tsx
+#: src/modules/ui/navigation/navigation-drawer/constants/OpenRecordInOptions.ts
 msgid "Side panel"
 msgstr "Side panel"
 
@@ -18066,6 +18245,11 @@ msgstr "Spaces and comma"
 msgid "Spanish"
 msgstr "Spanish"
 
+#. js-lingui-id: NWZxCM
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Speech recognition could not be reached. Check your connection."
+msgstr "Speech recognition could not be reached. Check your connection."
+
 #. js-lingui-id: pyfee5
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectSettings.tsx
 msgid "Speed up reads on the fields you filter or sort by most. Each index also slows down writes and uses disk space, so add them with intent."
@@ -18138,6 +18322,11 @@ msgstr "Start a new enterprise subscription."
 #: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Start date"
 msgstr "Start date"
+
+#. js-lingui-id: HUKGLi
+#: src/modules/ai/dictation/components/AiChatDictationButton.tsx
+msgid "Start dictation"
+msgstr "Start dictation"
 
 #. js-lingui-id: s+K73L
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
@@ -18215,6 +18404,11 @@ msgstr "Step filter group options"
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterOptionsDropdown.tsx
 msgid "Step filter options"
 msgstr "Step filter options"
+
+#. js-lingui-id: 9QwrMz
+#: src/modules/ai/dictation/components/AiChatDictationButton.tsx
+msgid "Stop dictation"
+msgstr "Stop dictation"
 
 #. js-lingui-id: I8EmDx
 #: src/modules/information-banner/components/impersonate/InformationBannerIsImpersonating.tsx
@@ -18453,6 +18647,26 @@ msgstr "Suggested"
 msgid "Sum"
 msgstr "Sum"
 
+#. js-lingui-id: UjjqZc
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize the records in this view and point out anything that needs attention."
+msgstr "Summarize the records in this view and point out anything that needs attention."
+
+#. js-lingui-id: UcEfIM
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize this record"
+msgstr "Summarize this record"
+
+#. js-lingui-id: jhr7if
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize this record and its recent activity."
+msgstr "Summarize this record and its recent activity."
+
+#. js-lingui-id: uN7gsS
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize this view"
+msgstr "Summarize this view"
+
 #. js-lingui-id: DBC3t5
 #: src/pages/settings/profile/appearance/components/DateTimeSettingsCalendarStartDaySelect.tsx
 #: src/pages/settings/profile/appearance/components/DateTimeSettingsCalendarStartDaySelect.tsx
@@ -18564,6 +18778,8 @@ msgid "Synchronize Objects Labels and API Names"
 msgstr "Synchronize Objects Labels and API Names"
 
 #. js-lingui-id: D+NlUC
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderSubItem.tsx
+#: src/modules/navigation-menu-item/display/object/components/NavigationDrawerItemForObjectMetadataItem.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 #: src/pages/settings/ai/SettingsAgentTurnDetail.tsx
 msgid "System"
@@ -19021,14 +19237,10 @@ msgid "The workspace that claimed this app registration"
 msgstr "The workspace that claimed this app registration"
 
 #. js-lingui-id: FEr96N
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 msgid "Theme"
 msgstr "Theme"
-
-#. js-lingui-id: 6tNbxl
-#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
-msgid "Theme "
-msgstr "Theme "
 
 #. js-lingui-id: Wn862P
 #: src/modules/keyboard-shortcut-menu/components/KeyboardShortcutMenuItem.tsx
@@ -19250,6 +19462,11 @@ msgstr "This form will appear in workflow runs."
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTriggersTab.tsx
 msgid "This function has no trigger configured, so it can only be invoked from the Test tab or by other functions."
 msgstr "This function has no trigger configured, so it can only be invoked from the Test tab or by other functions."
+
+#. js-lingui-id: 6IcJ94
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "This instance's plan could not be verified. Reload the page to try again."
+msgstr "This instance's plan could not be verified. Reload the page to try again."
 
 #. js-lingui-id: MGWsz+
 #: src/modules/information-banner/components/enterprise/InformationBannerNonProductionInstance.tsx
@@ -20290,6 +20507,11 @@ msgstr "Unordered list with bullets"
 msgid "Unpaid"
 msgstr "Unpaid"
 
+#. js-lingui-id: SYfHmN
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
+msgid "Unpin tab"
+msgstr "Unpin tab"
+
 #. js-lingui-id: SMaFdc
 #: src/modules/settings/unsubscribers/components/SettingsUnsubscribePreview.tsx
 #: src/pages/settings/communications/SettingsWorkspaceCommunications.tsx
@@ -20696,6 +20918,7 @@ msgstr "URI is already in redirect URIs list"
 
 #. js-lingui-id: IagCbF
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
 msgid "URL"
 msgstr "URL"
@@ -21553,6 +21776,11 @@ msgstr "Welcome, {workspaceName}."
 msgid "What can I help you with?"
 msgstr "What can I help you with?"
 
+#. js-lingui-id: ivJ1Xk
+#: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
+msgid "What can you do?"
+msgstr "What can you do?"
+
 #. js-lingui-id: /SZI25
 #: src/pages/settings/data-model/SettingsObjectFieldEdit.tsx
 msgid "What each language displays for this field's labels"
@@ -22020,6 +22248,7 @@ msgid "You are editing the {currentLanguageLabel} translation. Renaming instead 
 msgstr "You are editing the {currentLanguageLabel} translation. Renaming instead changes the source label, for every language."
 
 #. js-lingui-id: MFDARJ
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
 msgid "You are not allowed to create records for this object"
 msgstr "You are not allowed to create records for this object"

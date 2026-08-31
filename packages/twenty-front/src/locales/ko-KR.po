@@ -1083,10 +1083,13 @@ msgstr "사용자가 이 객체에서 수행할 수 있는 작업"
 
 #. js-lingui-id: FQBaXG
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
+#: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectFieldDisabledActionDropdown.tsx
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 #: src/modules/settings/security/components/SSO/SettingsSecuritySSORowDropdownMenu.tsx
+#: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
+#: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 #: src/pages/settings/ai/components/SettingsAiUsageTab.tsx
 #: src/pages/settings/ai/components/SettingsSkillInactiveMenuDropDown.tsx
 #: src/pages/settings/ai/SettingsSkillForm.tsx
@@ -1155,6 +1158,7 @@ msgid "Add \"{trimmedName}\" to options"
 msgstr "\"{trimmedName}\"을 옵션에 추가하기"
 
 #. js-lingui-id: 9CHcSG
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateNoRecordFoundForFilter.tsx
 msgid "Add a {objectLabelSingular}"
 msgstr "{objectLabelSingular} 추가"
@@ -1181,6 +1185,16 @@ msgstr "회의 링크 추가"
 msgid "Add a new company we're in touch with (e.g. name, website, industry). Details: "
 msgstr "연락 중인 새 회사를 추가하세요 (예: 이름, 웹사이트, 업종). 세부정보: "
 
+#. js-lingui-id: 5xxrhm
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Add a note"
+msgstr ""
+
+#. js-lingui-id: uza/B9
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Add a note to this record: "
+msgstr ""
+
 #. js-lingui-id: Ad+JsP
 #: src/modules/activities/calendar/hooks/useComposeCalendarEventRelatedRecordAction.ts
 msgid "Add a person with an email to this company first"
@@ -1192,9 +1206,15 @@ msgid "Add a record"
 msgstr "레코드 추가"
 
 #. js-lingui-id: eMc2xs
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
 #: src/modules/workflow/workflow-diagram/components/WorkflowDiagramCreateStepElement.tsx
 msgid "Add a step"
 msgstr "단계 추가"
+
+#. js-lingui-id: BKYXUk
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Add a step to this workflow that "
+msgstr ""
 
 #. js-lingui-id: KKfos4
 #: src/modules/workflow/workflow-diagram/workflow-nodes/components/WorkflowDiagramEmptyTriggerEditable.tsx
@@ -1606,7 +1626,6 @@ msgstr "첫 번째 {objectLabel} 추가"
 
 #. js-lingui-id: vLO+NG
 #: src/modules/settings/hooks/useGetAddedRelativeDateDescription.ts
-#: src/modules/ui/layout/show-page/components/ShowPageSummaryCard.tsx
 msgid "Added {beautifiedCreatedAt}"
 msgstr "{beautifiedCreatedAt} 추가"
 
@@ -1791,6 +1810,7 @@ msgid "Aggregate Chart"
 msgstr ""
 
 #. js-lingui-id: jsQZMk
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
 #: src/modules/settings/admin-panel/hooks/useSettingsAdminTabs.ts
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectForm.tsx
@@ -3829,11 +3849,6 @@ msgstr "채널"
 msgid "Chart"
 msgstr "차트"
 
-#. js-lingui-id: AHZflp
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
-msgid "Chat"
-msgstr "채팅"
-
 #. js-lingui-id: rlwve5
 #: src/modules/ai/components/AiChatThreadItemMenu.tsx
 msgid "Chat actions"
@@ -3872,10 +3887,20 @@ msgstr "ChatGPT"
 msgid "Chats"
 msgstr "채팅"
 
+#. js-lingui-id: oa2dNe
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Check recent runs"
+msgstr ""
+
 #. js-lingui-id: JslvtK
 #: src/modules/activities/calendar/components/CalendarEventComposerFields.tsx
 msgid "Check the event dates"
 msgstr "이벤트 날짜를 확인하세요"
+
+#. js-lingui-id: PaKTa7
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Check this workflow's recent runs and tell me whether any failed and why."
+msgstr ""
 
 #. js-lingui-id: h5C4B4
 #: src/modules/settings/emailing-domains/components/SettingsEmailingDomainVerifyButton.tsx
@@ -4233,10 +4258,10 @@ msgstr "세부 정보 접기"
 msgid "Collapse folder"
 msgstr "폴더 접기"
 
-#. js-lingui-id: 4Ub5ma
-#: src/modules/ui/navigation/navigation-drawer/components/NavigationDrawerCollapseButton.tsx
-msgid "Collapse navigation panel"
-msgstr "탐색 패널 축소"
+#. js-lingui-id: mkMLq4
+#: src/modules/navigation/hooks/useNavigationDrawerTogglePresentation.ts
+msgid "Collapse sidebar"
+msgstr ""
 
 #. js-lingui-id: OQTRMK
 #: src/modules/ai/components/AiChatCollapseButton.tsx
@@ -5235,7 +5260,13 @@ msgstr "생성"
 msgid "Create a new contact and link them to a company. Details: "
 msgstr "새 연락처를 만들고 회사에 연결하세요. 세부정보: "
 
+#. js-lingui-id: j85EUk
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a new record in this view. Details: "
+msgstr ""
+
 #. js-lingui-id: n1Nbbe
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
 #: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
 msgid "Create a record"
 msgstr "레코드 생성"
@@ -5243,6 +5274,22 @@ msgstr "레코드 생성"
 #. js-lingui-id: ZITKtg
 #: src/pages/settings/ai/components/SettingsAgentRoleTab.tsx
 msgid "Create a role to define permissions for this agent."
+msgstr ""
+
+#. js-lingui-id: OW4ZDC
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a task"
+msgstr ""
+
+#. js-lingui-id: Jk5UrD
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a task for this company: "
+msgstr ""
+
+#. js-lingui-id: T9fLSG
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Create a task for this record: "
 msgstr ""
 
 #. js-lingui-id: Xn2Nlq
@@ -5417,7 +5464,7 @@ msgid "Created"
 msgstr "생성됨"
 
 #. js-lingui-id: 4fBuqE
-#: src/modules/side-panel/components/SidePanelRecordInfo.tsx
+#: src/modules/object-record/record-show/components/RecordIdentifierBarCreatedAt.tsx
 #: src/modules/side-panel/pages/search/components/SidePanelSearchRecordPreviewCard.tsx
 msgid "Created {beautifiedCreatedAt}"
 msgstr ""
@@ -5765,6 +5812,26 @@ msgstr "사용자 지정 공급자"
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
 msgid "Custom Providers"
 msgstr "사용자 지정 공급자"
+
+#. js-lingui-id: 79QPp0
+#. placeholder {0}: access.seatThreshold
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "Custom providers are complimentary for organizations of up to {0} seats. Above that, an Organization plan is required."
+msgstr ""
+
+#. js-lingui-id: dDp+uz
+#. placeholder {0}: access.seatThreshold
+#. placeholder {1}: access.seatCount
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "Custom providers are complimentary for organizations of up to {0} seats. This instance has {1} seats, so an Organization plan is required."
+msgstr ""
+
+#. js-lingui-id: FjmF6O
+#. placeholder {0}: access.seatThreshold
+#. placeholder {1}: access.seatCount
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "Custom providers are complimentary up to {0} seats. This instance has {1}. Upgrade to add more."
+msgstr ""
 
 #. js-lingui-id: BjGDEB
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
@@ -6676,6 +6743,21 @@ msgstr "기기"
 msgid "Devices with an active session on your account"
 msgstr "계정에 활성 세션이 있는 기기"
 
+#. js-lingui-id: PFS3WB
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Dictation did not respond in this browser. Try Safari, or type instead."
+msgstr ""
+
+#. js-lingui-id: qXiOAF
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Dictation failed. Try again."
+msgstr ""
+
+#. js-lingui-id: MDy8Vw
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Dictation is not supported in this browser."
+msgstr ""
+
 #. js-lingui-id: MRB7nI
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 msgid "Direction"
@@ -6825,6 +6907,7 @@ msgid "Doesn't contain"
 msgstr "포함하지 않음"
 
 #. js-lingui-id: EoKe5U
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
 #: src/modules/settings/workspace/components/SettingsWorkspaceEmailGroupSection.tsx
 #: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
 msgid "Domain"
@@ -6834,6 +6917,11 @@ msgstr "도메인"
 #: src/modules/settings/domains/hooks/useSettingsCustomDomain.ts
 msgid "Domain already taken"
 msgstr "이미 사용 중인 도메인"
+
+#. js-lingui-id: eNcdvk
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
+msgid "Domain links are stored as a bare domain name, so twenty.com and https://www.twenty.com are the same value"
+msgstr ""
 
 #. js-lingui-id: XoBD/+
 #: src/modules/settings/domains/components/SettingsDomainRecords.tsx
@@ -6918,6 +7006,16 @@ msgstr "샘플 파일 다운로드"
 #: src/modules/activities/emails/components/EmailThreadPreview.tsx
 msgid "Draft"
 msgstr "초안"
+
+#. js-lingui-id: 1qZ7C3
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Draft an email"
+msgstr ""
+
+#. js-lingui-id: /b72oP
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Draft an email to this company about "
+msgstr ""
 
 #. js-lingui-id: DbAw4C
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowRunStepLogsEmailDetail.tsx
@@ -7195,6 +7293,12 @@ msgstr "페이지 편집"
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 msgid "Edit payment method, see your invoices and more"
 msgstr "결제 방법 편집, 송장 확인 등"
+
+#. js-lingui-id: bQBJjz
+#. placeholder {0}: pinnedTab.title
+#: src/modules/page-layout/components/PageLayoutRecordIdentifierBar.tsx
+msgid "Edit pinned tab: {0}"
+msgstr ""
 
 #. js-lingui-id: QJQd1J
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
@@ -8263,16 +8367,16 @@ msgstr "세부 정보 펼치기"
 msgid "Expand folder"
 msgstr "폴더 펼치기"
 
-#. js-lingui-id: 7OJt04
-#: src/modules/ui/navigation/navigation-drawer/components/NavigationDrawerCollapseButton.tsx
-msgid "Expand navigation panel"
-msgstr "탐색 패널 확장"
-
 #. js-lingui-id: CM8OoE
 #: src/modules/side-panel/pages/record-page/hooks/useExpandRecordSidePanelPage.ts
 #: src/modules/side-panel/pages/rich-text-page/hooks/useExpandRichTextSidePanelPage.ts
 msgid "Expand record"
 msgstr "레코드 확장"
+
+#. js-lingui-id: tugdy6
+#: src/modules/navigation/hooks/useNavigationDrawerTogglePresentation.ts
+msgid "Expand sidebar"
+msgstr ""
 
 #. js-lingui-id: Y7w75u
 #: src/modules/workflow/workflow-steps/workflow-actions/code-action/components/WorkflowCodeEditor.tsx
@@ -8344,6 +8448,16 @@ msgstr "만료까지 남은 시간"
 #: src/modules/settings/developers/utils/formatExpiration.ts
 msgid "Expires in {dateDiff}"
 msgstr "{dateDiff}에 만료"
+
+#. js-lingui-id: VJKLVq
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Explain this workflow"
+msgstr ""
+
+#. js-lingui-id: p8KUPY
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Explain what this workflow does, step by step."
+msgstr ""
 
 #. js-lingui-id: GS+Mus
 #: src/modules/object-record/record-index/export/hooks/useRecordIndexExportRecords.ts
@@ -9037,6 +9151,16 @@ msgstr "채팅 필터"
 msgid "Filter group rule options"
 msgstr "필터 그룹 규칙 옵션"
 
+#. js-lingui-id: FG3LyE
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Filter this view"
+msgstr ""
+
+#. js-lingui-id: xitJ93
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Filter this view to only show "
+msgstr ""
+
 #. js-lingui-id: 0i36a3
 #: src/modules/page-layout/widgets/timeline/components/WidgetActionTimelineFilter.tsx
 msgid "Filter timeline"
@@ -9325,6 +9449,7 @@ msgstr "전체 이름"
 #. js-lingui-id: i9zh9T
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectOpenRecordInPicker.tsx
 #: src/modules/settings/experience/components/OpenRecordInPreferencePicker.tsx
+#: src/modules/ui/navigation/navigation-drawer/constants/OpenRecordInOptions.ts
 msgid "Full page"
 msgstr "전체 페이지"
 
@@ -9492,6 +9617,7 @@ msgid "Go to Draft"
 msgstr "초안으로 이동"
 
 #. js-lingui-id: mT57+Q
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateRemote.tsx
 #: src/modules/views/view-picker/components/ViewPickerCreateButton.tsx
 #: src/modules/views/view-picker/components/ViewPickerCreateButton.tsx
@@ -9861,7 +9987,7 @@ msgid "Hire a partner to help you implement and customize Twenty."
 msgstr "Twenty의 구현 및 맞춤 설정을 도와줄 파트너를 고용하세요."
 
 #. js-lingui-id: i0qMbr
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
 #: src/modules/navigation/hooks/useMobileNavigationBarItems.ts
 msgid "Home"
 msgstr "홈"
@@ -10108,6 +10234,7 @@ msgid "If this email is registered, a password reset link has been sent"
 msgstr "이 이메일이 등록되어 있다면 비밀번호 재설정 링크가 전송되었습니다"
 
 #. js-lingui-id: ZfP/Ap
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateRemote.tsx
 msgid "If this is unexpected, please verify your settings."
 msgstr "예상치 못한 경우, 설정을 확인하십시오."
@@ -11527,6 +11654,11 @@ msgstr "링크"
 msgid "Link"
 msgstr "링크"
 
+#. js-lingui-id: FJPUOB
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
+msgid "Link content"
+msgstr ""
+
 #. js-lingui-id: pQjjYo
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownDefaultView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownDefaultView.tsx
@@ -11851,6 +11983,7 @@ msgstr "비공개로 전환"
 
 #. js-lingui-id: wckWOP
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
+#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsManageSection.tsx
 msgid "Manage"
@@ -12226,6 +12359,11 @@ msgstr "메타데이터 파일 생성 실패"
 msgid "Method"
 msgstr "방법"
 
+#. js-lingui-id: P9IeiA
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Microphone access is blocked. Allow it in your browser settings to dictate."
+msgstr ""
+
 #. js-lingui-id: 6cH65H
 #: src/modules/settings/security/components/SettingsSecurityAuthBypassOptionsList.tsx
 #: src/modules/settings/security/components/SettingsSecurityAuthProvidersOptionsList.tsx
@@ -12450,16 +12588,14 @@ msgstr "아래로 이동"
 #. js-lingui-id: iSLA/r
 #: src/modules/object-record/record-group/hooks/useRecordGroupActions.ts
 #: src/modules/object-record/record-table/record-table-header/components/RecordTableColumnHeadDropdownMenu.tsx
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
 msgid "Move left"
 msgstr "왼쪽으로 이동"
 
 #. js-lingui-id: Ubl2by
 #: src/modules/object-record/record-group/hooks/useRecordGroupActions.ts
 #: src/modules/object-record/record-table/record-table-header/components/RecordTableColumnHeadDropdownMenu.tsx
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
 msgid "Move right"
 msgstr "오른쪽으로 이동"
 
@@ -12654,10 +12790,10 @@ msgstr "내비게이션 메뉴 항목"
 msgid "Navigation menu items"
 msgstr "내비게이션 메뉴 항목"
 
-#. js-lingui-id: s2HXiD
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
-msgid "Navigation tabs"
-msgstr "내비게이션 탭"
+#. js-lingui-id: aTTshK
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
+msgid "Navigation modes"
+msgstr ""
 
 #. js-lingui-id: IbVc4A
 #: src/modules/page-layout/widgets/record-table/utils/getRecordTableWidgetLayoutPickerOptions.ts
@@ -12746,8 +12882,6 @@ msgstr "새 캘린더 이벤트"
 
 #. js-lingui-id: hIQkLb
 #: src/modules/ai/components/NavigationDrawerAiChatThreadItem.tsx
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
-#: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
 msgid "New chat"
 msgstr "새 채팅"
 
@@ -12989,6 +13123,7 @@ msgid "No {label}"
 msgstr "없음 {label}"
 
 #. js-lingui-id: 9CpMvJ
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateNoRecordFoundForFilter.tsx
 msgid "No {objectLabelSingular} found"
 msgstr "{objectLabelSingular}을(를) 찾을 수 없습니다"
@@ -13208,6 +13343,7 @@ msgid "No Data"
 msgstr "데이터 없음"
 
 #. js-lingui-id: 7tCnBa
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateRemote.tsx
 msgid "No Data Available for Remote Table"
 msgstr "원격 테이블에 사용할 수 있는 데이터가 없습니다"
@@ -13244,11 +13380,13 @@ msgid "No default configuration available for this widget"
 msgstr "이 위젯에는 기본 설정이 제공되지 않습니다"
 
 #. js-lingui-id: P4KXUa
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateSoftDelete.tsx
 msgid "No Deleted {objectLabelSingular} found"
 msgstr "삭제된 {objectLabelSingular}이(가) 없습니다."
 
 #. js-lingui-id: s7QKq9
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateSoftDelete.tsx
 msgid "No deleted records matching the filter criteria were found."
 msgstr "필터 기준에 맞는 삭제된 레코드가 없습니다."
@@ -13421,6 +13559,11 @@ msgstr "메시지를 찾을 수 없습니다."
 msgid "No metrics data available"
 msgstr "사용 가능한 메트릭스 데이터 없음"
 
+#. js-lingui-id: RUBcco
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "No microphone is available. Connect one and try again."
+msgstr ""
+
 #. js-lingui-id: UWZZdQ
 #: src/pages/settings/ai/components/SettingsAgentSettingsTab.tsx
 #: src/pages/settings/ai/forms/components/SettingsAiAgentForm.tsx
@@ -13509,12 +13652,14 @@ msgid "No record selected"
 msgstr "레코드 선택되지 않음"
 
 #. js-lingui-id: EqGTpW
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-picker/components/RecordPickerNoRecordFoundMenuItem.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
 msgid "No records found"
 msgstr "기록을 찾을 수 없습니다"
 
 #. js-lingui-id: FwUgy3
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateNoRecordFoundForFilter.tsx
 msgid "No records matching the filter criteria were found."
 msgstr "필터 기준에 맞는 레코드를 찾을 수 없습니다."
@@ -14327,6 +14472,11 @@ msgstr "Twenty 원격 서버 구성이 미리 채워진 상태로 Cursor의 MCP 
 msgid "Open Gmail"
 msgstr "Gmail 열기"
 
+#. js-lingui-id: C39K59
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
+msgid "Open in"
+msgstr ""
+
 #. js-lingui-id: noLjKT
 #: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldOnClickActionForm.tsx
 msgid "Open in app"
@@ -14352,6 +14502,11 @@ msgstr "레코드 열기"
 #: src/modules/settings/experience/components/OpenRecordInPreferencePicker.tsx
 msgid "Open records alongside the current page"
 msgstr "현재 페이지와 나란히 레코드를 열기"
+
+#. js-lingui-id: p9J4lB
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownOpenRecordInComponents.tsx
+msgid "Open records in"
+msgstr ""
 
 #. js-lingui-id: F7UdSk
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectOpenRecordInPicker.tsx
@@ -14452,6 +14607,11 @@ msgstr ""
 #: src/pages/settings/enterprise/components/OrganizationAdornment.tsx
 msgid "Organization"
 msgstr "조직"
+
+#. js-lingui-id: 0Ogq/s
+#: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
+msgid "Organization feature"
+msgstr ""
 
 #. js-lingui-id: cyDPQQ
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
@@ -14954,7 +15114,7 @@ msgid "Pie Chart"
 msgstr "파이 차트"
 
 #. js-lingui-id: 3pU8e+
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
 msgid "Pin tab"
 msgstr "탭 고정"
 
@@ -14970,6 +15130,11 @@ msgstr "분홍색"
 msgid "Pinned"
 msgstr "고정됨"
 
+#. js-lingui-id: OFY07S
+#: src/modules/page-layout/components/PageLayoutRecordIdentifierBar.tsx
+msgid "Pinned tab, always shown on the left"
+msgstr ""
+
 #. js-lingui-id: hx1ePY
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowFormFieldSettingsNumber.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowFormFieldSettingsText.tsx
@@ -14977,7 +15142,7 @@ msgid "Placeholder"
 msgstr "Placeholder"
 
 #. js-lingui-id: MFTZK8
-#: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
+#: src/modules/side-panel/pages/page-layout/components/TabSettingsPlacementSection.tsx
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsPlacementSection.tsx
 msgid "Placement"
 msgstr "배치"
@@ -15927,6 +16092,7 @@ msgid "Remove block"
 msgstr "블록 제거"
 
 #. js-lingui-id: 2HpFUd
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateSoftDelete.tsx
 msgid "Remove Deleted filter"
 msgstr "삭제된 필터 제거"
@@ -16124,6 +16290,16 @@ msgstr "인증 필요"
 #: src/pages/settings/ai/components/SettingsToolParameterTable.tsx
 msgid "Required"
 msgstr "필수"
+
+#. js-lingui-id: Vae65A
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Research this company"
+msgstr ""
+
+#. js-lingui-id: ycHL5x
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Research this company and summarize what they do, how big they are and any recent news."
+msgstr ""
 
 #. js-lingui-id: G42SNI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
@@ -16632,6 +16808,11 @@ msgstr "범위"
 msgid "Score"
 msgstr ""
 
+#. js-lingui-id: oOi11l
+#: src/modules/ai/components/AiChatScrollToBottomButton.tsx
+msgid "Scroll to bottom"
+msgstr ""
+
 #. js-lingui-id: hJjXGo
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 msgid "SDK"
@@ -17086,6 +17267,11 @@ msgstr "레코드 보기"
 msgid "See Records on All Objects"
 msgstr "모든 객체의 기록 보기"
 
+#. js-lingui-id: boSDrg
+#: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
+msgid "See what I can do"
+msgstr ""
+
 #. js-lingui-id: eQ3co2
 #: src/pages/settings/data-model/SettingsObjects.tsx
 msgid "See your data structure as an interactive diagram"
@@ -17475,11 +17661,6 @@ msgstr "이 작업 공간의 기본값 설정"
 msgid "Set as default"
 msgstr "기본값으로 설정"
 
-#. js-lingui-id: 7f09hf
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-msgid "Set as pinned tab"
-msgstr "고정 탭으로 설정"
-
 #. js-lingui-id: ml98ku
 #: src/modules/object-record/record-field/ui/meta-types/input/components/MultiItemFieldMenuItem.tsx
 msgid "Set as Primary"
@@ -17548,9 +17729,8 @@ msgid "Setting up your <0>database</0>..."
 msgstr "<0>데이터베이스</0>를 설정하는 중..."
 
 #. js-lingui-id: Tz0i8g
+#: src/modules/navigation/components/MainNavigationDrawerModeSwitcher.tsx
 #: src/modules/navigation/components/NavigationDrawerOtherSection.tsx
-#: src/modules/navigation/components/SettingsNavigationDrawer.tsx
-#: src/modules/navigation/components/SettingsNavigationDrawer.tsx
 #: src/modules/object-record/record-merge/hooks/useMergeRecordsContainerTabs.ts
 #: src/modules/settings/accounts/components/SettingsAccountsSettingsSection.tsx
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
@@ -17560,8 +17740,6 @@ msgstr "<0>데이터베이스</0>를 설정하는 중..."
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 #: src/modules/settings/roles/role/components/SettingsRole.tsx
 #: src/modules/side-panel/pages/page-layout/components/dashboard/SidePanelDashboardRecordTableSettings.tsx
-#: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
-#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
 #: src/pages/settings/ai/SettingsAgentForm.tsx
 #: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
@@ -17718,6 +17896,7 @@ msgstr ""
 #. js-lingui-id: P7rcbf
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectOpenRecordInPicker.tsx
 #: src/modules/settings/experience/components/OpenRecordInPreferencePicker.tsx
+#: src/modules/ui/navigation/navigation-drawer/constants/OpenRecordInOptions.ts
 msgid "Side panel"
 msgstr "사이드 패널"
 
@@ -18071,6 +18250,11 @@ msgstr "공백과 쉼표"
 msgid "Spanish"
 msgstr "스페인어"
 
+#. js-lingui-id: NWZxCM
+#: src/modules/ai/dictation/utils/getDictationFailureMessage.ts
+msgid "Speech recognition could not be reached. Check your connection."
+msgstr ""
+
 #. js-lingui-id: pyfee5
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectSettings.tsx
 msgid "Speed up reads on the fields you filter or sort by most. Each index also slows down writes and uses disk space, so add them with intent."
@@ -18143,6 +18327,11 @@ msgstr "새 엔터프라이즈 구독을 시작하세요."
 #: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Start date"
 msgstr "시작 날짜"
+
+#. js-lingui-id: HUKGLi
+#: src/modules/ai/dictation/components/AiChatDictationButton.tsx
+msgid "Start dictation"
+msgstr ""
 
 #. js-lingui-id: s+K73L
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
@@ -18220,6 +18409,11 @@ msgstr "단계 필터 그룹 옵션"
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterOptionsDropdown.tsx
 msgid "Step filter options"
 msgstr "단계 필터 옵션"
+
+#. js-lingui-id: 9QwrMz
+#: src/modules/ai/dictation/components/AiChatDictationButton.tsx
+msgid "Stop dictation"
+msgstr ""
 
 #. js-lingui-id: I8EmDx
 #: src/modules/information-banner/components/impersonate/InformationBannerIsImpersonating.tsx
@@ -18458,6 +18652,26 @@ msgstr "추천"
 msgid "Sum"
 msgstr "합계"
 
+#. js-lingui-id: UjjqZc
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize the records in this view and point out anything that needs attention."
+msgstr ""
+
+#. js-lingui-id: UcEfIM
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize this record"
+msgstr ""
+
+#. js-lingui-id: jhr7if
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize this record and its recent activity."
+msgstr ""
+
+#. js-lingui-id: uN7gsS
+#: src/modules/ai/components/suggested-prompts/contextual-suggested-prompts.ts
+msgid "Summarize this view"
+msgstr ""
+
 #. js-lingui-id: DBC3t5
 #: src/pages/settings/profile/appearance/components/DateTimeSettingsCalendarStartDaySelect.tsx
 #: src/pages/settings/profile/appearance/components/DateTimeSettingsCalendarStartDaySelect.tsx
@@ -18569,6 +18783,8 @@ msgid "Synchronize Objects Labels and API Names"
 msgstr "객체 레이블과 API 이름 동기화"
 
 #. js-lingui-id: D+NlUC
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderSubItem.tsx
+#: src/modules/navigation-menu-item/display/object/components/NavigationDrawerItemForObjectMetadataItem.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 #: src/pages/settings/ai/SettingsAgentTurnDetail.tsx
 msgid "System"
@@ -19026,14 +19242,10 @@ msgid "The workspace that claimed this app registration"
 msgstr "이 애플리케이션 등록을 소유한 작업공간"
 
 #. js-lingui-id: FEr96N
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 msgid "Theme"
 msgstr "테마"
-
-#. js-lingui-id: 6tNbxl
-#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownDefaultComponents.tsx
-msgid "Theme "
-msgstr "테마 "
 
 #. js-lingui-id: Wn862P
 #: src/modules/keyboard-shortcut-menu/components/KeyboardShortcutMenuItem.tsx
@@ -19253,6 +19465,11 @@ msgstr "이 양식은 워크플로 실행에서 표시됩니다."
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTriggersTab.tsx
 msgid "This function has no trigger configured, so it can only be invoked from the Test tab or by other functions."
 msgstr "이 함수에는 구성된 트리거가 없으므로 테스트 탭에서만 또는 다른 함수에 의해 호출될 수 있습니다."
+
+#. js-lingui-id: 6IcJ94
+#: src/modules/settings/admin-panel/ai/hooks/useCustomAiProviderAccess.ts
+msgid "This instance's plan could not be verified. Reload the page to try again."
+msgstr ""
 
 #. js-lingui-id: MGWsz+
 #: src/modules/information-banner/components/enterprise/InformationBannerNonProductionInstance.tsx
@@ -20293,6 +20510,11 @@ msgstr ""
 msgid "Unpaid"
 msgstr "미납"
 
+#. js-lingui-id: SYfHmN
+#: src/modules/side-panel/pages/page-layout/utils/getTabSettingsPlacementItems.ts
+msgid "Unpin tab"
+msgstr ""
+
 #. js-lingui-id: SMaFdc
 #: src/modules/settings/unsubscribers/components/SettingsUnsubscribePreview.tsx
 #: src/pages/settings/communications/SettingsWorkspaceCommunications.tsx
@@ -20699,6 +20921,7 @@ msgstr "해당 URI는 리디렉션 URI 목록에 이미 있습니다"
 
 #. js-lingui-id: IagCbF
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
+#: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
 msgid "URL"
 msgstr "URL"
@@ -21556,6 +21779,11 @@ msgstr "{workspaceName}에 오신 것을 환영합니다"
 msgid "What can I help you with?"
 msgstr "무엇을 도와드릴까요?"
 
+#. js-lingui-id: ivJ1Xk
+#: src/modules/ai/components/suggested-prompts/default-suggested-prompts.ts
+msgid "What can you do?"
+msgstr ""
+
 #. js-lingui-id: /SZI25
 #: src/pages/settings/data-model/SettingsObjectFieldEdit.tsx
 msgid "What each language displays for this field's labels"
@@ -22023,6 +22251,7 @@ msgid "You are editing the {currentLanguageLabel} translation. Renaming instead 
 msgstr "{currentLanguageLabel} 번역을 편집하고 있습니다. 대신 이름을 바꾸면 모든 언어의 원본 레이블이 변경됩니다."
 
 #. js-lingui-id: MFDARJ
+#: src/modules/object-record/record-list/components/RecordListEmptyState.tsx
 #: src/modules/object-record/record-table/empty-state/components/RecordTableEmptyStateReadOnly.tsx
 msgid "You are not allowed to create records for this object"
 msgstr "이 개체에 기록을 생성할 수 있는 권한이 없습니다"
