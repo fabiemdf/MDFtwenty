@@ -19,7 +19,9 @@ jobs:
   check-blocked-contributors:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    if: ${{ github.event_name != 'issue_comment' || github.event.issue.pull_request }}
+    # The blocked-bot list is Twenty-org policy. On a fork the check only
+    # fails Cloud Agent commits and cannot see twentyhq's allowlist.
+    if: ${{ github.repository == 'twentyhq/twenty' && (github.event_name != 'issue_comment' || github.event.issue.pull_request) }}
     steps:
       - name: Checkout
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1

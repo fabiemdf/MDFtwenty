@@ -23,7 +23,9 @@ jobs:
   danger-js:
     timeout-minutes: 5
     runs-on: ubuntu-latest
-    if: github.event.action != 'closed'
+    # Danger runs a full yarn install. On a fork that 5-minute job just
+    # times out, and the twentyhq-only comment bots are not configured.
+    if: github.repository == 'twentyhq/twenty' && github.event.action != 'closed'
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Install dependencies
