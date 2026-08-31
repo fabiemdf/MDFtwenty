@@ -9,12 +9,25 @@ const ordinalSuffix = (number: number) => {
   return number + (suffixes[v % 10] || 'th');
 };
 
-const fetchContributorStats = async (username: string) => {
-  const apiUrl = `https://twenty.com/api/contributors/contributorStats/${username}`;
+type ContributorStats = {
+  mergedPRsCount: number;
+  rank: number;
+};
 
+const fetchContributorStats = async (
+  username: string,
+): Promise<ContributorStats | null> => {
+  const apiUrl = `https://twenty.com/api/contributors/contributorStats/${username}`;
   const response = await fetch(apiUrl);
-  const data = await response.json();
-  return data;
+  const contentType = response.headers.get('content-type') ?? '';
+
+  // twenty.com returns an HTML 404 for unknown fork authors; that must
+  // not fail the merge check.
+  if (!response.ok || !contentType.includes('application/json')) {
+    return null;
+  }
+
+  return (await response.json()) as ContributorStats;
 };
 
 const fetchContributorImage = async (username: string) => {
@@ -72,6 +85,11 @@ const runCongratulate = async () => {
   }
 
   const stats = await fetchContributorStats(userName);
+
+  if (!stats) {
+    return;
+  }
+
   const contributorUrl = `https://twenty.com/contributors/${userName}`;
 
   // Pre-fetch to trigger cloudflare cache
@@ -97,5 +115,7 @@ const runCongratulate = async () => {
 };
 
 if (danger.github && danger.github.pr.merged) {
-  runCongratulate();
+  void runCongratulate().catch((error: unknown) => {
+    console.warn(error);
+  });
 }
