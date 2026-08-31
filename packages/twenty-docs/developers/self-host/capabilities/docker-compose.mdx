@@ -120,6 +120,8 @@ For example, the clipboard API might require a secure context - some features li
 
 We strongly recommend setting up Twenty behind a reverse proxy with SSL termination for optimal security and functionality.
 
+Running on a DigitalOcean droplet with Plesk? Use the [Plesk pack](https://github.com/fabiemdf/MDFtwenty/tree/main/packages/twenty-docker/plesk) instead of exposing port 3000. It binds loopback, terminates TLS in Plesk, and documents droplet sizing. Do not compile this monorepo on the Plesk host.
+
 #### Configuring `SERVER_URL`
 
 1. **Determine Your Access URL**
