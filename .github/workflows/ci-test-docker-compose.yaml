@@ -18,7 +18,24 @@ jobs:
     with:
       files: |
         packages/twenty-docker/**
+        !packages/twenty-docker/plesk/**
         docker-compose.yml
+  changed-plesk-check:
+    if: github.event_name != 'merge_group'
+    uses: ./.github/workflows/changed-files.yaml
+    with:
+      files: |
+        packages/twenty-docker/plesk/**
+  validate-plesk:
+    needs: changed-plesk-check
+    if: needs.changed-plesk-check.outputs.any_changed == 'true'
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - name: Validate Plesk pack
+        run: bash packages/twenty-docker/plesk/scripts/validate.sh
   test-compose:
     needs: changed-files-check
     if: needs.changed-files-check.outputs.any_changed == 'true'
@@ -158,7 +175,7 @@ jobs:
     if: always() && !cancelled()
     timeout-minutes: 5
     runs-on: ubuntu-latest
-    needs: [changed-files-check, test-compose, test-app-dev]
+    needs: [changed-files-check, changed-plesk-check, validate-plesk, test-compose, test-app-dev]
     steps:
       - name: Fail job if any needs failed
         if: contains(needs.*.result, 'failure')
